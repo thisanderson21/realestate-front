@@ -1,0 +1,25 @@
+
+.input_search {
+  position: relative;
+  width: 100%;
+  max-width: 352px;
+  margin-bottom: 45px;
+  height: max-content;
+  
+  input {
+    border: 2px solid #e1e1e1;
+    width: 100%;
+    padding: 20px 16px 20px 50px;
+    border-radius: 8px;
+    background-color: #f7f7fd;
+  }
+
+  .icon {
+    position: absolute;
+
+    left: 1em;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
+}

@@ -1,0 +1,142 @@
+.detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  padding: 80px 0;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  &_left {
+    position: relative;
+  }
+
+  .image_wrapper {
+    position: relative;
+    border-radius: 16px;
+    aspect-ratio: 16 / 10;
+  }
+
+  .image {
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-radius: 16px;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .badge {
+    position: absolute;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 16px 20px;
+    width: fit-content;
+    transition: all 0.3s ease;
+    z-index: 2;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #000929;
+    }
+    p {
+      font-size: 14px;
+      color: #000929aa;
+    }
+
+    &_icon, &_icon_home {
+      background-color: #f3f1ff;
+      border-radius: 50%;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    &_icon_home {
+      background-color: #674ef3;
+    }
+
+    &_top {
+      top: -24px;
+      left: -24px;
+    }
+
+    &_bottom {
+      bottom: -24px;
+      right: -24px;
+    }
+  }
+
+  &_right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000929;
+
+    span {
+      color: #7065f0;
+    }
+  }
+
+  .description {
+    color: #000929b3;
+    line-height: 1.6;
+    max-width: 480px;
+  }
+
+  .cta {
+    background-color: #7065f0;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    span {
+      margin-left: 6px;
+    }
+
+    &:hover {
+      background-color: #5b52d1;
+    }
+  }
+
+  .property_info {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .price {
+      font-size: 24px;
+      color: #7065f0;
+      font-weight: 700;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .address {
+      color: #00092977;
+      font-style: normal;
+    }
+  }
+}

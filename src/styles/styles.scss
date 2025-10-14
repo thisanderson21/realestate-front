@@ -1,0 +1,70 @@
+@use  'scss/partial/typography';
+@use  'scss/partial/fonts';
+@use  'scss/modules/var';
+@use  'themes/dark.scss';
+@use  'themes/light.scss';
+
+*{
+  box-sizing: border-box;
+  cursor: default;
+  user-select:auto; /* No selecciona texto por defecto */
+}
+html {
+  scroll-behavior: smooth !important;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0EFFB 100%);
+  background-attachment: fixed; /* ✅ hace que el fondo no se mueva al hacer scroll */
+  background-repeat: no-repeat;
+  background-size: cover; /* ✅ cubre todo el viewport */
+  color: var(--text-primary);
+
+  margin: 0;
+  color: var(--text-primary);
+  height: 100%;
+
+  overflow: overlay;
+  position: relative;
+  &::-webkit-scrollbar {
+    width:  7px;
+    max-height: 2px !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+button, a {
+  cursor: pointer;
+}
+
+.text-accent {
+  color: var(--text-accent);
+}

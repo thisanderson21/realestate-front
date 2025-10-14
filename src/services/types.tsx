@@ -1,0 +1,3 @@
+const TYPES = {REAL_ESTATE_REPOSITORY: Symbol.for('REAL_ESTATE_REPOSITORY')};
+
+export {TYPES};

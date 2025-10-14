@@ -1,0 +1,7 @@
+@use '../modules/var';
+
+$font-primary: 'PlusJakarta', sans-serif;
+
+* {
+  font-family: $font-primary !important;
+}
