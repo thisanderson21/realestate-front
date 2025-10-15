@@ -83,7 +83,7 @@ src/
 
 1. **Clonar el repositorio**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/thisanderson21/realestate-front
    cd real-estate-front
    ```
 
@@ -96,15 +96,12 @@ src/
 
 3. **Configurar variables de entorno**
    ```bash
-   cp .env.example .env.local
-   # Editar .env.local con las configuraciones necesarias
+   cp .env.example .env.development
    ```
 
 4. **Ejecutar en modo desarrollo**
    ```bash
    npm run dev
-   # o
-   yarn dev
    ```
 
 5. **Abrir en el navegador**
